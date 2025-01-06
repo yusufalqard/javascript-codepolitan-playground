@@ -1,6 +1,6 @@
 ### 🏷️Codepolitan Full Stack Web Developer Course - Learning Javascript Material
 
-In this repository, author create repository playground for javascript to practice writing and understanding function code from E-Learning Course material - Codepolitan Full Stack Web Developer, below are content that i used and learn for this learning project
+In this repository, author create repository playground for javascript to practice writing and understanding function code from E-Learning Course material - Codepolitan Full Stack Web Developer, below are content that i used for this learning project
 
 - Javascript [Beginner - Intermediate Level]
 - Object-Oriented Programming (OOP) with Javascript
