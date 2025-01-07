@@ -20,6 +20,15 @@
 // console.log(bookline);
 
 // Example of String
-const greet = "Hello, ";
-const MYname = "Yusuf Al Qardhawi";
-console.log(greet + MYname);
+// const greet = "Hello, ";
+// const MYname = "Yusuf Al Qardhawi";
+// console.log(greet + MYname);
+
+// Example of Boolean
+const What = 1;
+const Why = 1;
+let How = What - Why;
+// let "How" do you know that "How" is a Boolean? 
+Boolean(How);
+// Result of Boolean(How) is false because 1 - 1 = 0 because 0 is false and 1 is true for Boolean numeric value
+console.log(Boolean(How));
