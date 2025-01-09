@@ -67,12 +67,10 @@ console.log(`${Engineer.replace("fix", "repair")}`);
 // console.log(Boolean(How));
 
 // Example of Undefined and Null
-const Job = null;
-console.log(Job);
-const Notified = NaN;
-console.log(Notified);
-const Accepted = Job + Notified;
-console.log(Accepted);
-// NaN is Not a Number, so the result of Job + Notified is NaN
-// Undefined is a variable that has been declared but not assigned a value, so the result of Job is null
+let Noodle;
+console.log(Noodle);
+// Undefined means that variable is declared without any value
+let Ramen = null;
+console.log(Ramen);
+// Null means that variable is declared with a value of null
 
