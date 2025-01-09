@@ -24,20 +24,38 @@
 // const MYname = "Yusuf Al Qardhawi";
 // console.log(greet + MYname);
 // Result are "Hello, Yusuf Al Qardhawi"
+
 // You can use many type string such as toUpperCase, toLowerCase, toLocaleUpperCase, toLocaleLowerCase,
 // .trim(), .trim().toUpperCase(), .trim().toLowerCase(), .trim().toLocaleUpperCase(), .trim().toLocaleLowerCase(), and many more
 // Here an example how to use it
-let ThisIsMe = "Hello, My name is Yusuf Al Qardhawi"
-console.log(ThisIsMe.toUpperCase());
-console.log(ThisIsMe.toLowerCase());
+// let ThisIsMe = "Hello, My name is Yusuf Al Qardhawi"
+// console.log(ThisIsMe.toUpperCase());
+// console.log(ThisIsMe.toLowerCase());
 // console.log(ThisIsMe.toLocaleUpperCase());
 // console.log(ThisIsMe.toLocaleLowerCase());
-console.log(ThisIsMe.trim());
+// console.log(ThisIsMe.trim());
 // console.log(ThisIsMe.trim().toUpperCase());
 // console.log(ThisIsMe.trim().toLocaleUpperCase());
 // console.log(ThisIsMe.trim().toLowerCase());
 // console.log(ThisIsMe.trim().toLocaleLowerCase());
 // Enable/Disable this code to see the result
+
+// Some.method(argument) is a function that is used to manipulate data in JavaScript
+// Here is advance method type string you can used are below
+// .indexOf, .slice, .replace and you can view more in https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting
+// Here an example how to use it
+let Engineer = "fix this line of code";
+console.log(Engineer.indexOf("line"));
+console.log(Engineer.slice(14, 21));
+console.log(Engineer.replace("fix", "repair"));
+
+// There is trick you can use to manipulate data in JavaScript much better
+// By using Dollar sign or ${} to modify data changes
+// Here an example how to use it
+// use ` on top of tab your keyboard
+console.log(`${Engineer.replace("fix", "repair")}`);
+// Instead using Engineer.replace("fix", "repair") + ' ' + ... etc
+// This method is much better and easier to understand
 
 // Example of Boolean
 // const What = 1;
