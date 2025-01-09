@@ -47,3 +47,26 @@ console.log(MyGrade);
 // Const and Let function are mostly used in JavaScript for development process
 // Const give option to practice for new developer to understand how the process code works
 // Let give option to developer who already have enough fundamental of purpose usage to create application
+
+// Example of Math Objects and Random Numbers
+// Math Objects are used for math operation in JavaScript
+// Most commonly you can use are Math.PI, Math.round, Math.abs, Math.pow, Math.floor, etc
+// Here an example how to use it
+Math.PI;
+console.log(Math.PI);
+// Result are 3.141592653589793
+Math.round(4.6);
+console.log(Math.round(4.6));
+// Result are 5 because math value was rounded if the value is more than 0.5
+Math.abs(-4.6);
+console.log(Math.abs(-4.6));
+// Result are 4.6 because math value was absolute and positive value even though the value is negative
+Math.pow(2, 5);
+console.log(Math.pow(2, 5));
+// Result are 32 because math value was power of 2 to 5
+// So for calculation of 2 to the power of 5 is 2 * 2 * 2 * 2 * 2 = 32
+Math.random();
+console.log(Math.random());
+// Result are with random number everytime you make changes or refresh the page
+// Or even in Visual Studio Code with Quokka.js extension you will see active random number changes
+// From 0 to 1, but it's not include 1
