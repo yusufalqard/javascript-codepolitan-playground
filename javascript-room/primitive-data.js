@@ -24,6 +24,20 @@
 // const MYname = "Yusuf Al Qardhawi";
 // console.log(greet + MYname);
 // Result are "Hello, Yusuf Al Qardhawi"
+// You can use many type string such as toUpperCase, toLowerCase, toLocaleUpperCase, toLocaleLowerCase,
+// .trim(), .trim().toUpperCase(), .trim().toLowerCase(), .trim().toLocaleUpperCase(), .trim().toLocaleLowerCase(), and many more
+// Here an example how to use it
+let ThisIsMe = "Hello, My name is Yusuf Al Qardhawi"
+console.log(ThisIsMe.toUpperCase());
+console.log(ThisIsMe.toLowerCase());
+// console.log(ThisIsMe.toLocaleUpperCase());
+// console.log(ThisIsMe.toLocaleLowerCase());
+console.log(ThisIsMe.trim());
+// console.log(ThisIsMe.trim().toUpperCase());
+// console.log(ThisIsMe.trim().toLocaleUpperCase());
+// console.log(ThisIsMe.trim().toLowerCase());
+// console.log(ThisIsMe.trim().toLocaleLowerCase());
+// Enable/Disable this code to see the result
 
 // Example of Boolean
 // const What = 1;
