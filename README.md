@@ -20,7 +20,7 @@ In this repository, author create repository playground for javascript to practi
 # 🛠️ Prerequisite Software/Tools
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [Quokka.js Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-- Supported Browser with Console/Developer if not installing VS Code
+- Supported Browser with Console/Developer Mode such as Google Chrome
 
 ***
 # 📌How to use Quokka.js
