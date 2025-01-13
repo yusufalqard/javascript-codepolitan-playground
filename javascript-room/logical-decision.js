@@ -30,8 +30,18 @@ console.log(B);
 // There is log(), alert(), warn(), error(), prompt(), confirm(), etc
 // Here an example how to use it
 console.log('This is logging');
-console.warn('Warning');
-console.error('Error');
-prompt('Fill this message below');
-confirm('Are you sure?');
+// console.warn('Warning');
+// console.error('Error');
+// prompt('Fill this message below');
+// confirm('Are you sure?');
 // Use browser console to see the result with open html file in browser i was provide in this folder
+
+// Example of Operator
+// && (AND) Operator, || (OR) Operator, ! (NOT) Operator
+// Here an example how to use it
+const Price = 201;
+if (Price >= 100 && Price < 200) {
+  console.log("Price is very valuable");
+} else {
+  console.log("Price is very expensive");
+}
