@@ -34,4 +34,4 @@ console.warn('Warning');
 console.error('Error');
 prompt('Fill this message below');
 confirm('Are you sure?');
-// Use browser console to see the result
+// Use browser console to see the result with open html file in browser i was provide in this folder
