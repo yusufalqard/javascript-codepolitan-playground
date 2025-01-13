@@ -24,7 +24,7 @@ if (Weight > 70) {
   console.log("You are fat");
 } else if (Weight <= 69) {
   console.log("You are normal");
-} else if (Weight <= 50) {
+} else if (Weight >= 50) {
   console.log("You are thin");
 }
 
@@ -42,3 +42,7 @@ if (GradeScore >= 90) {
   console.log("You are failed, keep practice");
 }
 // Change the value of Weight and GradeScore to see the result code
+// Why 2 example above has different writing IF ELSE NEST STATEMENT?
+// First of example if you dont have weight than 50 kg, no script will run
+// while second of example if you have score other or equal 50, script else will run
+// Mostly developer use second example to make sure all condition will run
