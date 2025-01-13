@@ -46,3 +46,16 @@ if (GradeScore >= 90) {
 // First of example if you dont have weight than 50 kg, no script will run
 // while second of example if you have score other or equal 50, script else will run
 // Mostly developer use second example to make sure all condition will run
+
+// Example correct way to use IF ELSE Nest Statement for development
+// Here is example how to make IF Else nest for password prompt basic level
+const Password = prompt("Enter your password");
+if (Password.length >= 8) {
+  if (Password.indexOf(" ") === -1) {
+    console.log("Valid Password");
+    } else {
+      console.log("Password cannot contain space");
+    }
+  } else {
+    console.log("Password must be 8 characters long");
+}
