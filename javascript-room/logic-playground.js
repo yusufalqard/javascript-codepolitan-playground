@@ -49,7 +49,7 @@ if (GradeScore >= 90) {
 
 // Example correct way to use IF ELSE Nest Statement for development
 // Here is example how to make IF Else nest for password prompt basic level
-const Password = prompt("Enter your password");
+// const Password = prompt("Enter your password");
 // if (Password.length >= 8) {
 //   if (Password.indexOf(" ") === -1) {
 //     console.log("Valid Password");
@@ -61,8 +61,20 @@ const Password = prompt("Enter your password");
 // }
 
 // Using AND operator to make the code efficient
-if (Password.length >= 8 && Password.indexOf(" ") === -1) {
-  console.log("Valid Password");
-} else {  
-  console.log("Password does not meet the requirements");
+// if (Password.length >= 8 && Password.indexOf(" ") === -1) {
+//   console.log("Valid Password");
+// } else {  
+//   console.log("Password does not meet the requirements");
+// }
+
+// Using OR operator for role access
+const role = prompt("Enter your role");
+if (role === 'admin' || role === 'editor') {
+  console.log('Access Granted, Welcome admin');
+} else {
+  console.log('Access Denied, You are not admin');
 }
+// Result if prompt admin and role anything else than editor
+// Condition will given true, because OR operator only need one of the condition to be true
+// If first condition other than admin, then result was false
+// and you got notification Access Denied, You are not admin
