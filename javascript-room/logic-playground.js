@@ -50,12 +50,19 @@ if (GradeScore >= 90) {
 // Example correct way to use IF ELSE Nest Statement for development
 // Here is example how to make IF Else nest for password prompt basic level
 const Password = prompt("Enter your password");
-if (Password.length >= 8) {
-  if (Password.indexOf(" ") === -1) {
-    console.log("Valid Password");
-    } else {
-      console.log("Password cannot contain space");
-    }
-  } else {
-    console.log("Password must be 8 characters long");
+// if (Password.length >= 8) {
+//   if (Password.indexOf(" ") === -1) {
+//     console.log("Valid Password");
+//     } else {
+//       console.log("Password cannot contain space");
+//     }
+//   } else {
+//     console.log("Password must be 8 characters long");
+// }
+
+// Using AND operator to make the code efficient
+if (Password.length >= 8 && Password.indexOf(" ") === -1) {
+  console.log("Valid Password");
+} else {  
+  console.log("Password does not meet the requirements");
 }
