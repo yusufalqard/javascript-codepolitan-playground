@@ -78,3 +78,11 @@ if (role === 'admin' || role === 'editor') {
 // Condition will given true, because OR operator only need one of the condition to be true
 // If first condition other than admin, then result was false
 // and you got notification Access Denied, You are not admin
+
+// Using NOT operator
+const UserLogIN = admin;
+if (UserLogIN !== 'admin') {
+  console.log('You are not admin');
+} else {
+  console.log('Welcome admin');
+}
