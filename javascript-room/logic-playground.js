@@ -80,7 +80,7 @@ if (role === 'admin' || role === 'editor') {
 // and you got notification Access Denied, You are not admin
 
 // Using NOT operator
-const UserLogIN = admin;
+const UserLogIN = prompt("Enter your role");
 if (UserLogIN !== 'admin') {
   console.log('You are not admin');
 } else {
