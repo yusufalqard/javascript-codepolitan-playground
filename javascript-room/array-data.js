@@ -37,3 +37,14 @@ console.log(Rest);
 // Result are [3,6,7]
 // Arrat pop means that you will remove item on end of array index
 // Which on this one Rest index of 3 will removed
+
+// Example how to use Array Shift and Unshift
+let NumTicket = [203,105,319,51,3];
+NumTicket.unshift(23);
+NumTicket.unshift(43);
+NumTicket.unshift(0);
+NumTicket.shift();
+console.log(NumTicket);
+// Array shift means that you will remove item on start of array index
+// Array unshift means that you will add item on start of array index
+// Result are [43,23,203,105,319,51,3]
