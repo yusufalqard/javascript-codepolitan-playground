@@ -17,5 +17,3 @@ console.log(color);
 // Because we change the value of index 1 and 2
 // Array always start from 0,1,2,...,n which n is the last index
 // You can easily remember this Array[n] as reference
-// If we give const for function of color, we can't override the value
-// Unlike let where you can freely change value data everytime
