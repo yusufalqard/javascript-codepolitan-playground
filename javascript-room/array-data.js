@@ -125,3 +125,17 @@ console.log(Animal.join(' + '));
 console.log(Animal.join(' % '));
 // Result are Elephant % Monkey % Cat % Shark % Piranha
 // This is how array join work
+
+// Array inside of Array nested
+const Sudoku = [
+    [1,3,2],
+    [6,4,5],
+    [8,9,7]
+];
+console.log(Sudoku);
+// Result are array inside array of [[1,3,2],[6,4,5],[8,9,7]]
+console.log(Sudoku[0]);
+// Result are Array of first index-0 [1,3,2]
+console.log(Sudoku[0][1]);
+// Result are array of first index-0 where inside array nest called on index-1
+// Which shown as 3 from array index-0 of [1,3,2]
