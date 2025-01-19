@@ -27,3 +27,7 @@ console.log(Heartbeat['DataPerson']);
 // This is wrong way to received object data in javascript
 // In Unorthodox way, this way used only in Array which not recommended to use this method
 // Array and Object has own their usage for development app
+
+// Add property inside of object data
+Heartbeat.Assurance = 'Tressler'
+console.log(Heartbeat);
