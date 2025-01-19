@@ -31,3 +31,30 @@ console.log(Heartbeat['DataPerson']);
 // Add property inside of object data
 Heartbeat.Assurance = 'Tressler'
 console.log(Heartbeat);
+
+// How to called function of Array and Object Data at once
+const Checkout = [
+    {
+        Product : 'Milk',
+        Price : 10,
+        Discount : true
+    },
+    {
+        Product :  'Noodles',
+        Price : 15,
+        Discount : false
+    },
+    {
+        Product : 'Snacks',
+        Price : 20,
+        Discount : false
+    },
+];
+console.log(Checkout);
+console.log(Checkout[2]);
+// This is how you can call function object inside array
+console.log(Checkout[1].Product);
+console.log(Checkout[1]['Discount']);
+// You can call specific object inside array with this
+// It also depends how developer read the code from tutorial or work project
+// Use on situational condition to make everyone can read your code as well
