@@ -94,12 +94,15 @@ while (LineNumber < 10) {
     LineNumber++;
 }
 
-// Try this on html
+// Try this on index.html and disable comment code below to copy script
+// <script>
 // const Password = 'Admin';
 // let verify = prompt('Insert your password');
 // while ( verify !== Password){
 //     verify = prompt('Insert your password');
 // }
 // alert('Welcome, Admin');
+// </script>
+
 // As long while verify password user input not correct it will remain loop
 // until condition met where Password = Admin
