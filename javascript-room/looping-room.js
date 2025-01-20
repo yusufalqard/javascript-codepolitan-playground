@@ -86,3 +86,20 @@ for (let B=0; B<Supermarket.length; B++){
 // Smoke Paprika
 
 // This is how you can fetch data array using Nested Loop and Array together
+
+// Looping with While
+let LineNumber = 0;
+while (LineNumber < 10) {
+    console.log(LineNumber);
+    LineNumber++;
+}
+
+// Try this on html
+// const Password = 'Admin';
+// let verify = prompt('Insert your password');
+// while ( verify !== Password){
+//     verify = prompt('Insert your password');
+// }
+// alert('Welcome, Admin');
+// As long while verify password user input not correct it will remain loop
+// until condition met where Password = Admin
