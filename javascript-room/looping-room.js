@@ -23,3 +23,11 @@ for (let i = 20; i >= 0; i -= 2)
 // { console.log(a)}
 // Result it will give you infinite loop until your hardware become not responding or lag
 // DO NOT TRY THIS LOOP CODE
+
+// In looping condition, you can even fetch array data into looping code
+// Here is the example
+const Drink = ['Cola','Fanta','Sprite','DrPepper','BigCola'];
+for (let M = 0; M < Drink.length; M++ ){
+    console.log(M, Drink[M]);
+}
+// Result are [0, Cola], [1, Fanta], [2, Sprite], [3, DrPepper], [4, BigCola]
