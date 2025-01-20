@@ -127,3 +127,25 @@ for (let i = 0; i < 8; i++) {
 // if we do another condition IF inside FOR as break condition
 // Result are different, it will force IF condition where number equal 5
 // It will stop looping number into result 0, 1, 2, 3, 4, 5
+
+// Looping with FOR..OF (Advance Javascript only supports with Newest Browser Version)
+// This code really elegant much clear on writing and understandable to read
+const Assign = ['Fix Bug','Revision','Create Idea','Preview'];
+for (let Task of Assign ){
+    console.log(Task);
+}
+// NESTED LOOP AND ARRAY with FOR..OF methods
+const PickNum = [
+    [1,3,4],
+    [51,2,100],
+    [7,831,209],
+    [81,9,729],
+];
+for (let Roll of PickNum){
+    for(let RNG of Roll){
+        console.log(RNG);
+    }
+}
+// Essential this writing much flexible and less confusing
+// The problem that it does not support with Internet Explorer
+// You have to used newest browser version in order script to run
