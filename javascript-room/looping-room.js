@@ -149,3 +149,30 @@ for (let Roll of PickNum){
 // Essential this writing much flexible and less confusing
 // The problem that it does not support with Internet Explorer
 // You have to used newest browser version in order script to run
+
+// For..OF on Object looping condition
+const PricePlan = {
+    VPN:30,
+    YoutubePremium:5,
+    Spotify:10,
+    Mudfish:15,
+    Internet:20,
+};
+// for(let PayPrice in PricePlan){
+//     console.log(`${PayPrice} price are $${PricePlan[PayPrice]}`);
+// }
+// Result are below
+// VPN price are $30
+// YoutubePremium price are $5
+// Spotify price are $10
+// Mudfish price are $15
+// Internet price are $20
+
+let BuyPlan = 0;
+let Prices = Object.values(PricePlan);
+for (let CheckingOut of Prices){
+    BuyPlan += CheckingOut;
+}
+console.log(BuyPlan/Prices.length);
+// Result are total buyplan of price plan divided by items category
+// 80 / 5 = 16, which consider every product sells are average cost $16 in median range
