@@ -16,3 +16,10 @@ for (let i = 20; i >= 0; i -= 2)
     {
     console.log(i);
 }
+
+// For Looping, make sure to NOT make mistake during FOR condition
+// This is Example if you run with console.log() this looping
+// for (let a = 20; a >=0; i++)
+// { console.log(a)}
+// Result it will give you infinite loop until your hardware become not responding or lag
+// DO NOT TRY THIS LOOP CODE
