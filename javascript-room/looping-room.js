@@ -31,3 +31,26 @@ for (let M = 0; M < Drink.length; M++ ){
     console.log(M, Drink[M]);
 }
 // Result are [0, Cola], [1, Fanta], [2, Sprite], [3, DrPepper], [4, BigCola]
+
+// Nested Loop Section
+// You can even loop nested same like IF ELSE NEST STATEMENT in different way code built in
+// Here is the example
+const QNA = 'abcd';
+for (let T=1; T<=5; T++){
+    console.log(`${T}. Question Number ${T}: `);
+    for (let Q=0; Q< QNA.length; Q++ ){
+        console.log(` ${QNA[Q]}. Ans Option`);
+    }
+}
+// Result are 
+// 1. Question Number 1:
+// a. Ans Option
+// b. Ans Option
+// c. Ans Option
+// d. Ans Option
+// ... until ...
+// 5. Question Number 5:
+// a. Ans Option
+// b. Ans Option
+// c. Ans Option
+// d. Ans Option
