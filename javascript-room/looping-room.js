@@ -54,3 +54,35 @@ for (let T=1; T<=5; T++){
 // b. Ans Option
 // c. Ans Option
 // d. Ans Option
+
+// Fetch Data from Array using Nested Loop and Nested Array
+const Supermarket = [
+    ['Chicken','Fish','Wagyu'],
+    ['Tomato','Chili','Garlic'],
+    ['Soy Sauce','Mustard','Smoke Paprika'],
+];
+for (let B=0; B<Supermarket.length; B++){
+    const Product = Supermarket[B];
+    console.log(`[Item List #${B+1}]`);
+    // Result are Item List #1, Item List #2, Item List #3
+    for(let G=0; G < Product.length; G++){
+        console.log(Product[G]);
+        // Result are Chicken, Fish, Wagyu, Tomato, Chili, Garlic, Soy Sauce, Mustard, Smoke Paprika
+    }
+}
+// Final result of this nested loop and array are below
+
+// [Item List #1]
+// Chicken
+// Fish
+// Wagyu
+// [Item List #2]
+// Tomato
+// Chili
+// Garlic
+// [Item List #3]
+// Soy Sauce
+// Mustard
+// Smoke Paprika
+
+// This is how you can fetch data array using Nested Loop and Array together
