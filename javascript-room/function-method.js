@@ -93,3 +93,10 @@ ApplyJob();
 // Lexical Scope is function inside function
 // It can access the variable from parent function
 // But parent function cannot access variable from child function
+
+// Expression Function
+const resultFactorial = function (insertFactorial) {
+    return insertFactorial * insertFactorial;
+};
+console.log(resultFactorial(5));
+// Expression function is function that stored in variable
