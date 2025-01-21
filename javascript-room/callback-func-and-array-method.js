@@ -75,3 +75,22 @@ console.log(RollWheel());
 const CountMoney = (a, b) => a + b
 console.log(CountMoney(10, 20));
 // Result will show 30 in console.log(CountMoney(10, 20));
+
+// Settimeout and Setinterval in Javascript
+// setTimeout is a function that will execute the function after certain time
+// setInterval is a function that will execute the function repeatedly after certain time
+
+// console.log('Hello, can you hear me?');
+// setTimeout(() => {
+//     console.log('Hello, i can hear you');
+// }, 5000);
+
+// Result will show in console as:
+// `Hello, can you hear me?`
+// `Hello, i can hear you` after 5 seconds function executed
+
+// const interval = setInterval(() => {
+//     console.log(Math.random());
+// }, 3000);
+// Result are random number that will show in console every 3 seconds
+// To stop the setInterval, we can use clearInterval(interval);
