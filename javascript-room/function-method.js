@@ -114,3 +114,22 @@ function RollDiceMarble(){
 DoubleRollDice(RollDiceMarble);
 // This function will call RollDiceMarble function twice at same time
 // It shows two result of dice roll in console.log(ResultDice);
+
+// Reverse Function Value as Function
+function ResultOfFunction (){
+    const rand = Math.random();
+
+    if (rand > 0.1){
+        return function(){
+            console.log("Congratulations! You Win!");
+        };
+    } else {
+        return function(){
+            console.log("Sorry, You are not lucky today!");
+        };
+    }
+}
+const Winner = ResultOfFunction();
+Winner();
+// This function will show random result of win or lose
+// It will generate the result randomly everytime we make changes on this code editor or call the function
