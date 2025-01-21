@@ -24,3 +24,27 @@ function AddNumeric(a,b){
     console.log(`Result a + b is ${total}`);
 }
 AddNumeric(2,8);
+
+// Return function in Javascript
+function CountMe(a,b){
+    const CountResult = a + b;
+    return CountResult;
+    // Below this code will not processed and return function will stop and keep the code
+    console.log(`Finish counting for ${CountResult}`);
+}
+CountMe(2,3);
+
+function Retrying(a,b){
+    if(typeof a !== 'number' || typeof b !== 'number'){
+        return false;
+        // If any number does not match condition it will return false value
+    }
+    return a + b;
+    // If both number meet the condition, result will be processed
+}
+Retrying(2,9);
+// Normally return code will stop other condition process
+// Console.log cannot be declare in visual studo code because it does not processed
+// Even with Quokka.js extension
+// But you can see the result in browser by open index-fc.html file
+// And use inspect into console tab to see the result script running
