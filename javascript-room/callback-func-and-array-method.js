@@ -53,3 +53,13 @@ const ToppingTaste = ToppingIceCream.map(function (tasty){
     return tasty.toLowerCase();
 });
 ToppingTaste; // ["blueberry", "strawberry", "mint"]
+
+// Arrow Function in Javascript
+// Arrow Function is a shorter way to write function in Javascript
+// Arrow Function is not only shorter but also more readable
+
+const BusTicket = (x) => {
+    return x * 2;
+}
+console.log(BusTicket(5));
+// Result will show 10 in console.log(BusTicket(5));
