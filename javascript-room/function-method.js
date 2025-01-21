@@ -100,3 +100,17 @@ const resultFactorial = function (insertFactorial) {
 };
 console.log(resultFactorial(5));
 // Expression function is function that stored in variable
+
+// Function as Other Argument Function
+function DoubleRollDice(DiceDouble){
+    DiceDouble();
+    DiceDouble();
+}
+
+function RollDiceMarble(){
+    const ResultDice = Math.floor(Math.random()*6) +1;
+    console.log(ResultDice);
+}
+DoubleRollDice(RollDiceMarble);
+// This function will call RollDiceMarble function twice at same time
+// It shows two result of dice roll in console.log(ResultDice);
