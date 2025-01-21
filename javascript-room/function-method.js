@@ -61,3 +61,20 @@ console.log(OS);  //While this on global scope, Result will show as Windows 11
 // Variable scope and function in visibility has different result when we build the code
 // Global variable can be accessed by any function
 // Local variable only can be accessed by the function itself
+
+// Blocked Scope Function
+let Height = 3;
+if (Height > 5){
+    let Width = 10;
+    // console.log(Width); // This will show in console as 10 for Width
+}
+// console.log(Width);
+// This will show error in console and said
+// Width is not defined because Width is blocked scope function
+// It only can be accessed by the function itself
+
+for (let index = 0; index < 10; index++){
+    const indexNumber = index;
+    // console.log(`index `,indexNumber);
+}
+console.log(`index `,indexNumber);
