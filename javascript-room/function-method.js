@@ -133,3 +133,17 @@ const Winner = ResultOfFunction();
 Winner();
 // This function will show random result of win or lose
 // It will generate the result randomly everytime we make changes on this code editor or call the function
+
+// Method in Javascript
+const myMath = {
+    PI: 3.14159,
+    Square: function (num){
+        return num * num;
+    },
+    Cube: function (num){
+        return num ** 3;
+    }
+};
+console.log(myMath.Square(7));
+console.log(myMath.Cube(3));
+// Method is function that stored in property of object
