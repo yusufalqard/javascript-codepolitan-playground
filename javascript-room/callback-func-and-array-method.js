@@ -63,3 +63,15 @@ const BusTicket = (x) => {
 }
 console.log(BusTicket(5));
 // Result will show 10 in console.log(BusTicket(5));
+
+// Return Explicit in Arrow Function
+// If the function is only one line, we can remove the curly braces
+const RollWheel = () => (
+    Math.floor(Math.random()*50)
+);
+console.log(RollWheel());
+// RollWheel() will generate random number between 0 to 50
+
+const CountMoney = (a, b) => a + b
+console.log(CountMoney(10, 20));
+// Result will show 30 in console.log(CountMoney(10, 20));
