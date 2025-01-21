@@ -50,31 +50,46 @@ Retrying(2,9);
 // And use inspect into console tab to see the result script running
 
 // Scope function in Javascript
-let OS = "Windows 11";
-function bestOS (){
-    let OS = "Windows 7";
-    OS; // This will show in console as Windows 7
-}
-bestOS(); // This is function call to show the result
-console.log(OS);  //While this on global scope, Result will show as Windows 11
+// let OS = "Windows 11";
+// function bestOS (){
+    // let OS = "Windows 7";
+    // OS; // This will show in console as Windows 7
+// }
+// bestOS(); // This is function call to show the result
+// console.log(OS);  //While this on global scope, Result will show as Windows 11
 
 // Variable scope and function in visibility has different result when we build the code
 // Global variable can be accessed by any function
 // Local variable only can be accessed by the function itself
 
 // Blocked Scope Function
-let Height = 3;
-if (Height > 5){
-    let Width = 10;
+// let Height = 3;
+// if (Height > 5){
+    // let Width = 10;
     // console.log(Width); // This will show in console as 10 for Width
-}
+// }
 // console.log(Width);
 // This will show error in console and said
 // Width is not defined because Width is blocked scope function
 // It only can be accessed by the function itself
 
-for (let index = 0; index < 10; index++){
-    const indexNumber = index;
+// for (let index = 0; index < 10; index++){
+    // const indexNumber = index;
     // console.log(`index `,indexNumber);
+// }
+// console.log(`index `,indexNumber);
+
+// Lexical Scope Function
+function ApplyJob (){
+    const Role = 'Full Stack Developer';
+
+    function SpecificJob(){
+        let SeekerApplicant = `Yusuf as ${Role}`;
+        console.log(SeekerApplicant);
+    }
+    SpecificJob();
 }
-console.log(`index `,indexNumber);
+ApplyJob();
+// Lexical Scope is function inside function
+// It can access the variable from parent function
+// But parent function cannot access variable from child function
