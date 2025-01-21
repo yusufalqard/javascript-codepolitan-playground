@@ -48,3 +48,16 @@ Retrying(2,9);
 // Even with Quokka.js extension
 // But you can see the result in browser by open index-fc.html file
 // And use inspect into console tab to see the result script running
+
+// Scope function in Javascript
+let OS = "Windows 11";
+function bestOS (){
+    let OS = "Windows 7";
+    OS; // This will show in console as Windows 7
+}
+bestOS(); // This is function call to show the result
+console.log(OS);  //While this on global scope, Result will show as Windows 11
+
+// Variable scope and function in visibility has different result when we build the code
+// Global variable can be accessed by any function
+// Local variable only can be accessed by the function itself
