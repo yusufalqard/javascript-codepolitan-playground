@@ -134,3 +134,21 @@ console.log(TitleTopSales);
 console.log(BestVote.filter((movie) => movie.rating >= 80).map((movie) => movie.title));
 // Result are Spider-Man 2 and Home Alone 2 Lost in New York
 // See how efficient the code is much straightforward
+
+// Every and Some method in Javascript
+// Every method is used to check if all element in array meet the criteria of certain condition
+// Some method is used to check if some element in array meet the criteria of certain condition
+
+const PassGrade = [77,80,82,85,90,100];
+const PassMedian = PassGrade.every((MedianScore) => MedianScore >= 70);
+console.log(PassMedian);
+// Result are true because all PassGrade score meeting criteria of >= 70
+// If any PassGrade value has less than 70, the result will be false
+
+const FailGrade = [40,45,50,55,60,65];
+const BypassGrade = FailGrade.some((MedianPass) => MedianPass >= 75);
+console.log(BypassGrade);
+// Result are false because all FailGrade score not meeting criteria of >= 75
+// If any FailGrade value has more than 75, the result will be true
+
+// Basically, Every and Some method is same like boolean
