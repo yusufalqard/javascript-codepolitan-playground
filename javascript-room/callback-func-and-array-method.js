@@ -152,3 +152,63 @@ console.log(BypassGrade);
 // If any FailGrade value has more than 75, the result will be true
 
 // Basically, Every and Some method is same like boolean
+
+// Reduce method in Javascript
+// Reduce method is used to reduce the array into single value
+// Basically this method do element process from certain array
+// and return the single value
+
+const TotalPayment = [100,200,300,400,500];
+const PayNow = TotalPayment.reduce((currentPayNow, singleTotalPayment) => {
+    return currentPayNow + singleTotalPayment;
+});
+console.log(PayNow);
+// Result will show 1500 in console.log(PayNow);
+// This method is sum all value in TotalPayment array
+
+const GreatVoteMovie = [
+    {
+      title : "Die Another Day",
+      year : "2002",
+      character : "Pierce Brosnan",
+      rating : "77",
+    },
+    {
+      title : "Angel and Demons",
+      year : "2004",
+      character : "Tom Hanks",
+      rating : "80",
+    },
+    {
+      title : "Constantine",
+      year : "2005",
+      character : "Keanu Reeves",
+      rating : "85",
+    },
+    {
+      title : "Mr bean Holiday",
+      year : "2006",
+      character : "Rowan Atkinson",
+      rating : "90",
+    },
+    {
+      title : "Project Almanac",
+      year : "2008",
+      character : "Jonny Weston",
+      rating : "100",
+    },
+];
+
+const TopNomination = GreatVoteMovie.reduce((TopNomination, singleGreatVoteMovie) => {
+    console.log(TopNomination, singleGreatVoteMovie);
+    if (singleGreatVoteMovie > TopNomination.rating){
+      return singleGreatVoteMovie;
+    }
+    return TopNomination;
+});
+// console.log(TopNomination);
+
+// At line 203, we can see that Reduce method is doing comparison between each element in GreatVoteMovie array
+// From title and rating, it will return the highest rating in GreatVoteMovie array
+// The result will be given in console.log(TopNomination);
+// after line 205 executed and return the value of TopNomination
