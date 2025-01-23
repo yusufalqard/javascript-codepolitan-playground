@@ -212,3 +212,21 @@ const TopNomination = GreatVoteMovie.reduce((TopNomination, singleGreatVoteMovie
 // From title and rating, it will return the highest rating in GreatVoteMovie array
 // The result will be given in console.log(TopNomination);
 // after line 205 executed and return the value of TopNomination
+
+// Arrow Function inside of Object This leads to Global Windows Object
+// If we use Arrow Function inside of Object, it will lead to Global Windows Object not local object
+
+const PersonHospital = {
+    firstName : "Michael",
+    lastName : "Hamilton",
+    // fullName :  function () {
+    //     return `${this.firstName} ${this.lastName}`;
+    // },
+    // This function will return Michael Hamilton because it is local object
+    fullName :  () => {
+        return `${this.firstName} ${this.lastName}`;
+    },
+    // This function will return undefined because Arrow Function is not local object
+};
+console.log(PersonHospital.fullName());
+// You can see the result by enable/disable comment of code in line 222 to 225 and 226 to 228
