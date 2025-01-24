@@ -23,3 +23,15 @@ console.log(SayHello());
 // SayHello("John", "Good Morning");
 // Result are John, Good Morning
 // Enable/Disable code of comment at line 21 and 23 to see the result in console.log on line 19 with Quokka.js or Browser Console
+
+// Spread Operator (...) on Javascript
+// Spread Operator is used to change some array elements or object properties
+// even string as parameter into function
+
+const NumArray = [1,2,3,4,5];
+console.log(...NumArray);
+// Result are 1 2 3 4 5
+console.log(Math.min(...NumArray));
+// Result are 1
+console.log(Math.max(...NumArray));
+// Result are 5
