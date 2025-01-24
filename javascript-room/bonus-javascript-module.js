@@ -43,3 +43,13 @@ const BankName = ["VISA", "MasterCard", "Paypal"];
 const SecondArray = [...FirstArray, ...BankName];
 console.log(SecondArray);
 // Result are [1, 2, 3, "VISA", "MasterCard", "Paypal"]
+
+// Merge object with Spread Operator
+// Combine first object with spread operator
+const UserName = {
+    BankName : "VISA",
+    IdNumber : 123456,
+};
+const AddRole = {...UserName, Role : "Admin"};
+console.log(AddRole);
+// Result are {BankName: "VISA", IdNumber: 123456, Role: "Admin"}
