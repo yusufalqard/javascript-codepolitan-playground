@@ -35,3 +35,11 @@ console.log(Math.min(...NumArray));
 // Result are 1
 console.log(Math.max(...NumArray));
 // Result are 5
+
+// Merge array with Spread Operator
+// Combine first array with spread operator
+const FirstArray = [1,2,3];
+const BankName = ["VISA", "MasterCard", "Paypal"];
+const SecondArray = [...FirstArray, ...BankName];
+console.log(SecondArray);
+// Result are [1, 2, 3, "VISA", "MasterCard", "Paypal"]
