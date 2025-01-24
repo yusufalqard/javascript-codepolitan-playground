@@ -36,7 +36,7 @@ console.log(Math.min(...NumArray));
 console.log(Math.max(...NumArray));
 // Result are 5
 
-// Merge array with Spread Operator
+// Merge array with Spread in Javascript
 // Combine first array with spread operator
 const FirstArray = [1,2,3];
 const BankName = ["VISA", "MasterCard", "Paypal"];
@@ -44,7 +44,7 @@ const SecondArray = [...FirstArray, ...BankName];
 console.log(SecondArray);
 // Result are [1, 2, 3, "VISA", "MasterCard", "Paypal"]
 
-// Merge object with Spread Operator
+// Merge object with Spread in Javascript
 // Combine first object with spread operator
 const UserName = {
     BankName : "VISA",
@@ -53,3 +53,17 @@ const UserName = {
 const AddRole = {...UserName, Role : "Admin"};
 console.log(AddRole);
 // Result are {BankName: "VISA", IdNumber: 123456, Role: "Admin"}
+
+// Rest Param with Spread in Javascript
+// Rest param can be optimized with Spread
+const PayAll = (...nums) => {
+    return nums.reduce((total, num) => total + num);
+};
+console.log(PayAll(15,85));
+// Result are 100
+const OylmpicWinner = ["Usain Bolt", "Michael Phelps", "Simone Biles"];
+const titleWinner = (gold, silver, bronze) => {
+    console.log(`Gold : ${gold}, Silver : ${silver}, Bronze : ${bronze}`);
+}
+titleWinner(...OylmpicWinner);
+// Result are Gold : Usain Bolt, Silver : Michael Phelps, Bronze : Simone Biles
