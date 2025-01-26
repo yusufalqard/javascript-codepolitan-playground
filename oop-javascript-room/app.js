@@ -13,3 +13,6 @@ const Arr = [1,2,3];
 Arr.hello = () => {console.log('Hello')};
 console.log(Arr.hello());
 // Result is Hello if you run the script in the browser console.
+// But if you run the script in the terminal, the result is undefined.
+// Because the array is an object in JavaScript, so you can add a property to the object.
+// But the property is not a part of the array, it is a part of the object.
