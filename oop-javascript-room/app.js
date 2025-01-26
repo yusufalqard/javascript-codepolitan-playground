@@ -1,5 +1,5 @@
 // Object-Oriented Programming (OOP) in JavaScript
-// OOP is a programming paradigm that relies on the concept of classes and objects. 
+// OOP is a programming paradigm that relies on the concept of classes and objects.
 // It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.
 // Which makes it easier to manage and maintain the code.
 // Without OOP, the code can be messy and hard to maintain.
@@ -36,21 +36,21 @@
 // This is code less effective
 // Therefore we could make those code much better shown below here
 
-function convertColor (r,g,b) {
-    const color = {};
-    color.r = r
-    color.g = g
-    color.b = b
-    
-    color.rgb = function () {
-        return `rgb(${r}, ${g}, ${b})`;
-    };
-    color.hex = function () {
-        const {r, g, b} = this;
-        return '#' + ((1<<24) + (r<<16) + (g<<8) + b).toString(16).slice(1);
-    };
+function convertColor(r, g, b) {
+  const color = {};
+  color.r = r;
+  color.g = g;
+  color.b = b;
 
-    return color;
+  color.rgb = function () {
+    return `rgb(${r}, ${g}, ${b})`;
+  };
+  color.hex = function () {
+    const { r, g, b } = this;
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  };
+
+  return color;
 }
 
 // So, we can call the function convertColor like this
@@ -61,3 +61,48 @@ function convertColor (r,g,b) {
 // color.hex();
 // result is #ff6419;
 // It also works with Array, Object, and Function.
+
+// Create Object with Constructor Function
+// Constructor function is a function that is used to create an object.
+
+function Color(r, g, b) {
+  this.r = r;
+  this.g = g;
+  this.b = b;
+}
+Color.prototype.rgb = function () {
+  const { r, g, b } = this;
+  return `rgb(${r}, ${g}, ${b})`;
+};
+Color.prototype.hex = function () {
+  const { r, g, b } = this;
+  return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+};
+// So, we can call the function Color like this
+// Input in browser console this code below
+// new Color(255, 100, 25).hex()
+// Result is #ff6419
+Color.prototype.rgba = function (a = 1.0) {
+    const {r,g,b} = this;
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
+}
+// Input in browser console this code below
+// document.body.style.backgroundColor = new Color (255, 100, 25).rgba(0.5);
+// Result is rgba(255, 100, 25, 0.5)
+// Your Document HTML will change to those color by browser console temporary
+
+// To test logic of OOP try this code in browser console
+
+// const color1 = convertColor(21,44,36);
+// const color2 = convertolor(120,14,55);
+// color1.rgb === color2.rgb;
+// Result are false
+// Method color on convertColor will have different object everytime we input new value
+
+// Meanwhile with using prototype we could make the method shared between object
+// const color1 = new Color(21,44,36);
+// const color2 = new Color(120,14,55);
+// color1.rgb === color2.rgb;
+// Result are true
+// Method color on Color will have shared method between object and it will be the same everytime we input new value
+// Its belong to the prototype of the object source location
