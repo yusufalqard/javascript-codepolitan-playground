@@ -267,3 +267,93 @@ class Color {
 // Result is hsl(15, 86.3%, 86.3%)
 
 // This is how to create a class with constructor for intermediate level
+
+// OOP, Extend Class, Super in Javascript for Intermediate Level
+
+// class AnimalPet {
+//   constructor(name, age){
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat(){
+//     return `${this.name} is eating`;
+//   }
+//   age(){
+//     return `${this.name} is ${this.age} years old`;
+//   }
+// }
+
+// class Cat {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat() {
+//     return `${this.name} is eating`;
+//   }
+//   // Input const Cat = new Cat('Tom', 3);
+//   // Result is Cat.eat() => Tom is eating
+//   age(){
+//     return `${this.name} is ${this.age} years old`;
+//   }
+//   // Input Cat.age() then Result are Tom is 3 years old
+//   sound(){
+//     return 'Meow';
+//   }
+// }
+
+// class Dog {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat() {
+//     return `${this.name} is eating`;
+  
+//   }
+//   // Input const Dog = new Cat('Spike', 5);
+//   // Result is Dog.eat() => Spike is eating
+//   age(){
+//     return `${this.name} is ${this.age} years old`;
+//   }
+//   // Input Dog.age() then Result are Spike is 3 years old
+//   sound(){
+//     return 'Woof woof';
+//   }
+// }
+
+// After we build those code, It is sounds less efficient and repetitive
+// We could generalize this code by using extend class and super in Javascript
+// Here is how the code can be generalized much better
+
+class AnimalPet { // This is parent class of Object
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+  eat(){
+    return `${this.name} is eating`;
+  }
+  age(){
+    return `${this.name} is ${this.age} years old`;
+  }
+}
+class Cat extends AnimalPet { // This is child class of Object from AnimalPet
+  constructor(name, age, livesLeft = 9){
+    super(name, age);
+    this.livesLeft = livesLeft;
+  }
+  CatSound(){
+    return 'Meow';
+  }
+}
+class Dog extends AnimalPet { // This is child class of Object from AnimalPet
+  DogSound(){
+    return 'Woof woof';
+  }
+}
+// You can see clearly this is much better than before :D
+
+// Why OOP is standarized in programming?
+// It is because OOP is a way to structure the code in a more organized way.
+// And make Developer do not repeat same writing code for each object created
