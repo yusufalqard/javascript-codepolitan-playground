@@ -18,21 +18,21 @@ const requestPromise = (url) => {
     const delay = Math.floor(Math.random() * 4500) + 500;
     setTimeout(() => {
       if (delay > 3000) {
-        failure(`Error: Connection Timeout`);
+        reject(`Error: Connection Timeout`);
       } else {
-        success(`Success: ${url}(${delay}ms)`);
+        resolve(`Success: ${url}(${delay}ms)`);
       }
     }, delay);
   });
 };
 
 // Example about callback function
-requestCallback('movie.com', function(response){
-  console.log(`success`,response);  
-},
-function(error){
-  console.log(`error`, error);
-});
+// requestCallback('movie.com', function(response){
+//   console.log(`success`,response);  
+// },
+// function(error){
+//   console.log(`error`, error);
+// });
 
 // Exampe why developer not using callback function
 
@@ -87,3 +87,52 @@ function(error){
 // until they decide add limit for their code
 // As developer, you do not wanna break your code like this
 // or prevent this callback hell usage ever on code development
+
+// Example of promise callback function
+requestPromise(`https://google.com`).then((response) => {
+  console.log(`success`,response);
+})
+.catch((error)=>{
+  console.log(`error`,error);
+});
+
+// requestPromise('movie.com')
+// 	.then((response) => {
+// 		console.log('success', response);
+// 		requestPromise('movie.com')
+// 			.then((response) => {
+// 				console.log('success', response);
+// 				requestPromise('movie.com')
+// 					.then((response) => {
+// 						console.log('success', response);
+// 						requestPromise('movie.com')
+// 							.then((response) => {
+// 								console.log('success', response);
+// 								requestPromise('movie.com')
+// 									.then((response) => {
+// 										console.log('success', response);
+// 									})
+// 									.catch((error) => {
+// 										console.log('error', error);
+// 									});
+// 							})
+// 							.catch((error) => {
+// 								console.log('error', error);
+// 							});
+// 					})
+// 					.catch((error) => {
+// 						console.log('error', error);
+// 					});
+// 			})
+// 			.catch((error) => {
+// 				console.log('error', error);
+// 			});
+// 	})
+// 	.catch((error) => {
+// 		console.log('error', error);
+// 	});
+
+// Promise call function also has similiar with callback function
+// They can also have callback hell function which we already above of us
+// This is a early concept basic learning of callback hell and promise usage
+// at Asynchronous Javascript
