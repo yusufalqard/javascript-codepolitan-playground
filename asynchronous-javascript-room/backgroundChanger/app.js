@@ -46,3 +46,17 @@ async function printRainbow (){
     console.log('All Process Done! Function printRainbow process executed')
 }
 printRainbow();
+
+// Manage error using requestHandler for Async function
+async function requestHandler(){
+    // let result = await requestPromise('movie.com');
+    // console.log(result);
+    try {
+        let result = await requestPromise('movie.com');
+        console.log(result);
+    } catch (error) {
+        console.log('Error', error);
+    }
+}
+// Request Handler can be useful for testing respons time of sending data
+// This logic commonly use on Application Development in company
