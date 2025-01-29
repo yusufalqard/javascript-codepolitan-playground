@@ -138,22 +138,41 @@ requestPromise(`https://google.com`).then((response) => {
 // at Asynchronous Javascript
 
 // EXAMPLE of using correct way Promise call function at Asynchronous Javascript
-requestPromise('movie.com')
-	.then((result) => {
-		console.log('page 1');
-		console.log(result);
-		return requestPromise('movie.com');
-	})
-	.then(() => {
-		console.log('page 2');
-		return requestPromise('movie.com');
-	})
-	.then(() => {
-		console.log('page 3');
-		return requestPromise('movie.com');
-	})
-	.catch((err) => {
-		console.log(err);
-	});
+// requestPromise('movie.com')
+// 	.then((result) => {
+// 		console.log('page 1');
+// 		console.log(result);
+// 		return requestPromise('movie.com');
+// 	})
+// 	.then(() => {
+// 		console.log('page 2');
+// 		return requestPromise('movie.com');
+// 	})
+// 	.then(() => {
+// 		console.log('page 3');
+// 		return requestPromise('movie.com');
+// 	})
+// 	.catch((err) => {
+// 		console.log(err);
+// 	});
 
 // Try refresh your browser console to see the result requestPromise
+
+// Example of Advance promise callback function at Asynchronous Javascript
+const RealPromise = () => {
+  return new Promise((resolve, reject) => {
+    resolve (()=> {
+      'Success to resolve request';
+    });
+    reject(() => {
+      'Failed to resolve request';
+    });
+  });
+};
+
+// Open your browser console and type this code below
+// const req = new RealPromise()
+// console.log(req) or type req and enter
+// Result are generate everytime you refresh the page
+// Either 'Success to resolve request'
+// or 'Failed to resolve request'
