@@ -136,3 +136,24 @@ requestPromise(`https://google.com`).then((response) => {
 // They can also have callback hell function which we already above of us
 // This is a early concept basic learning of callback hell and promise usage
 // at Asynchronous Javascript
+
+// EXAMPLE of using correct way Promise call function at Asynchronous Javascript
+requestPromise('movie.com')
+	.then((result) => {
+		console.log('page 1');
+		console.log(result);
+		return requestPromise('movie.com');
+	})
+	.then(() => {
+		console.log('page 2');
+		return requestPromise('movie.com');
+	})
+	.then(() => {
+		console.log('page 3');
+		return requestPromise('movie.com');
+	})
+	.catch((err) => {
+		console.log(err);
+	});
+
+// Try refresh your browser console to see the result requestPromise
