@@ -13,4 +13,4 @@ So author can accelerate and focus adapt quick with current material learning co
 - Author understands that purpose using repository code for learning material, not claimed as their owner of this code.
 
 ***
-Credits to [Codepolitan](https://www.codepolitan.com/course/intro/belajar-javascript-dom/) for providing download code
+Credits to [Codepolitan](https://www.codepolitan.com/course/intro/belajar-javascript-dom/) for providing source code to download by user
