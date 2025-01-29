@@ -17,7 +17,7 @@ const requestPromise = (url) => {
   return new Promise((resolve, reject) => {
     const delay = Math.floor(Math.random() * 4500) + 500;
     setTimeout(() => {
-      if (delay > 4000) {
+      if (delay > 3000) {
         failure(`Error: Connection Timeout`);
       } else {
         success(`Success: ${url}(${delay}ms)`);
@@ -36,41 +36,51 @@ function(error){
 
 // Exampe why developer not using callback function
 
-// requestPromise('movie.com')
-// 	.then((response) => {
+// requestCallback(
+// 	'movie.com',
+// 	function (response) {
 // 		console.log('success', response);
-// 		requestPromise('movie.com')
-// 			.then((response) => {
+// 		requestCallback(
+// 			'movie.com',
+// 			function (response) {
 // 				console.log('success', response);
-// 				requestPromise('movie.com')
-// 					.then((response) => {
+// 				requestCallback(
+// 					'movie.com',
+// 					function (response) {
 // 						console.log('success', response);
-// 						requestPromise('movie.com')
-// 							.then((response) => {
+// 						requestCallback(
+// 							'movie.com',
+// 							function (response) {
 // 								console.log('success', response);
-// 								requestPromise('movie.com')
-// 									.then((response) => {
+// 								requestCallback(
+// 									'movie.com',
+// 									function (response) {
 // 										console.log('success', response);
-// 									})
-// 									.catch((error) => {
+// 									},
+// 									function (error) {
 // 										console.log('error', error);
-// 									});
-// 							})
-// 							.catch((error) => {
+// 									}
+// 								);
+// 							},
+// 							function (error) {
 // 								console.log('error', error);
-// 							});
-// 					})
-// 					.catch((error) => {
+// 							}
+// 						);
+// 					},
+// 					function (error) {
 // 						console.log('error', error);
-// 					});
-// 			})
-// 			.catch((error) => {
+// 					}
+// 				);
+// 			},
+// 			function (error) {
 // 				console.log('error', error);
-// 			});
-// 	})
-// 	.catch((error) => {
+// 			}
+// 		);
+// 	},
+// 	function (error) {
 // 		console.log('error', error);
-// 	});
+// 	}
+// );
 
 // This is why we do not use Callback function to prevent Callback hell
 // where we use callback function multiple time like IF ELSE nested
