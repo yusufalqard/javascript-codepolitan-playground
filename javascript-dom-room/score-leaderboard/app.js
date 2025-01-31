@@ -3,6 +3,7 @@ const p2Button = document.querySelector('#p2-button');
 const p1Display = document.querySelector('#p1-display');
 const p2Display = document.querySelector('#p2-display');
 const resetButton = document.querySelector('#reset');
+const WinnerPointOption = document.querySelector('#WinnerPointMax');
 
 let p1Score = 0;
 let p2Score = 0;
@@ -19,7 +20,7 @@ function reset() {
 
 p1Button.addEventListener('click', function() {
     if (!isGameFinish){
-        p1Score = +1;
+        p1Score += 1;
         if(p1Score === WinnerPointLimit){
             isGameFinish = true;
         }
@@ -29,7 +30,7 @@ p1Button.addEventListener('click', function() {
 
 p2Button.addEventListener('click', function() {
     if (!isGameFinish){
-        p2Score = +1;
+        p2Score += 1;
         if(p2Score === WinnerPointLimit){
             isGameFinish = true;
         }
@@ -38,3 +39,7 @@ p2Button.addEventListener('click', function() {
 });
 
 resetButton.addEventListener('click', reset);
+WinnerPointOption.addEventListener('change', function(){
+    WinnerPointLimit = parseInt(this.value);
+    reset();
+});
