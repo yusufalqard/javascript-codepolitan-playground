@@ -11,6 +11,10 @@ So author can accelerate and focus adapt quick with current material learning co
 - If we download code materials from other author for learning fast pace and reduce time for create any files, it is acceptable
 - Author understands that never use other people code in big working project, it is looks bad habit as professional coding developer
 - Author understands that purpose using repository code for learning material, not claimed as their owner of this code.
+- Author create summary usage of DOM Javascript and Make Score Leaderboard - Study Case Repository from Scratch
 
 ***
 Credits to [Codepolitan](https://www.codepolitan.com/course/intro/belajar-javascript-dom/) for providing source code to download by user
+
+For my study case DOM of Javascript can be accessed by click this repository below
+- [Score Leaderboard - Study Case from Scratch](https://github.com/yusufalqard/javascript-codepolitan-playground/tree/master/javascript-dom-room/score-leaderboard)
