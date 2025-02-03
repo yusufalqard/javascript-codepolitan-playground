@@ -1,3 +1,13 @@
+const jokes = document.querySelector('#jokes');
+const button = document.querySelector('button');
+
+const addDadJokes = async () => {
+    const textJoke = await getDadJokes();
+    const newLI = document.createElement('LI');
+    newLI.append(textJoke);
+    jokes.append(newLI);
+};
+
 const getDadJokes = async () => {
   const SetConfig = {
     headers: {
@@ -5,5 +15,7 @@ const getDadJokes = async () => {
     },
   };
   const res = await axios.get("https://icanhazdadjoke.com/", SetConfig);
-  console.log(res.data.joke);
+  return(res.data.joke);
 };
+
+button.addEventListener('click', addDadJokes);
