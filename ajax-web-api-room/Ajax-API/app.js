@@ -17,27 +17,45 @@
 // DataTestRequest.send();
 
 // Using Fetch method
-fetch("https://swapi.dev/api/people/3")
-  .then((res) => {
-    if (!res.ok) {
-      throw Error("Could not fetch the data for that resource");
-    }
-    return res.json();
-  })
-  .then((data) => {
-    console.log("1st JSON", data);
-    return fetch("https://swapi.dev/api/people/4");
-  })
-  .then((res) => {
-    console.log("2nd JSON");
-    if (!res.ok) {
-      throw Error("Could not fetch the data for that resource");
-    }
-    return res.json();
-  })
-  .then((data) => {
+// fetch("https://swapi.dev/api/people/3")
+//   .then((res) => {
+//     if (!res.ok) {
+//       throw Error("Could not fetch the data for that resource");
+//     }
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log("1st JSON", data);
+//     return fetch("https://swapi.dev/api/people/4");
+//   })
+//   .then((res) => {
+//     console.log("2nd JSON");
+//     if (!res.ok) {
+//       throw Error("Could not fetch the data for that resource");
+//     }
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log("error", err);
+//   });
+
+// Using Async Method
+
+const LoadDataPeople = async () => {
+    try {
+    const res = await fetch('https://swapi.dev/api/people/5');
+    const data = await res.json();
     console.log(data);
-  })
-  .catch((err) => {
-    console.log("error", err);
-  });
+
+    const res2 = await fetch('https://swapi.dev/api/people/6');
+    const data2 = await res2.json();
+    console.log(data2);
+    } catch (err){
+        console.log('error',err);
+    }
+};
+
+LoadDataPeople();
