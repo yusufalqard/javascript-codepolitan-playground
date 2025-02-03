@@ -44,18 +44,42 @@
 
 // Using Async Method
 
-const LoadDataPeople = async () => {
-    try {
-    const res = await fetch('https://swapi.dev/api/people/5');
-    const data = await res.json();
-    console.log(data);
+// const LoadDataPeople = async () => {
+//     try {
+//     const res = await fetch('https://swapi.dev/api/people/5');
+//     const data = await res.json();
+//     console.log(data);
 
-    const res2 = await fetch('https://swapi.dev/api/people/6');
-    const data2 = await res2.json();
-    console.log(data2);
-    } catch (err){
-        console.log('error',err);
-    }
+//     const res2 = await fetch('https://swapi.dev/api/people/6');
+//     const data2 = await res2.json();
+//     console.log(data2);
+//     } catch (err){
+//         console.log('error',err);
+//     }
+// };
+
+// LoadDataPeople();
+
+// Using Axios method
+// Introduction Axios
+// axios
+//     .get('https://swapi.dev/api/people/7')
+//     .then((res)=> {
+//         console.log(res.data);
+//     })
+//     .catch((err)=>{
+//         console.log(err);
+//         alert(err.message);
+//     });
+
+const DataPeople = async (id) => {
+	try {
+		const res = await axios.get(`https://swapi.dev/api/people/${id}`);
+		console.log(res.data);
+	} catch (error) {
+		console.log(error);
+		console.log(error.message);
+		console.log(error.response.status);
+		console.log(error.response.data);
+	}
 };
-
-LoadDataPeople();
